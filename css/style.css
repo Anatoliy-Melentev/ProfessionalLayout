@@ -504,34 +504,34 @@
     text-decoration: none;
 }
 
-.f-icon {
+.soc-network__f-icon {
     background-image: url("../img/icons/f.svg");
 }
 
-.f-icon:hover {
+.soc-network__f-icon:hover {
     background-image: url("../img/icons/f-hover.svg");
 }
 
-.i-icon {
+.soc-network__i-icon {
     background-image: url("../img/icons/i.svg");
 }
 
-.i-icon:hover {
+.soc-network__i-icon:hover {
     background-image: url("../img/icons/i-hover.svg");
 }
 
-.p-icon {
+.soc-network__p-icon {
     background-image: url("../img/icons/p.svg");
 }
 
-.p-icon:hover {
+.soc-network__p-icon:hover {
     background-image: url("../img/icons/p-hover.svg");
 }
 
-.t-icon {
+.soc-network__t-icon {
     background-image: url("../img/icons/t.svg");
 }
 
-.t-icon:hover {
+.soc-network__t-icon:hover {
     background-image: url("../img/icons/t-hover.svg");
 }
