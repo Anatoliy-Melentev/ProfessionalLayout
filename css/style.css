@@ -79,7 +79,7 @@ button {
   font-family: Lato;
   src: url(../fonts/Lato-Regular.ttf);
 }
-.cls-btn {
+.close-btn {
   float: right;
   margin: 16px;
   position: relative;
@@ -87,7 +87,7 @@ button {
   height: 12px;
   cursor: pointer;
 }
-.cls-btn:before, .cls-btn:after {
+.close-btn:before, .close-btn:after {
   content: "";
   position: absolute;
   width: 17px;
@@ -96,14 +96,12 @@ button {
   position: absolute;
   margin: auto;
   top: 5px;
-  right: 0px;
-  bottom: 0px;
   left: -2px;
 }
-.cls-btn:before {
+.close-btn:before {
   transform: rotate(-45deg);
 }
-.cls-btn:after {
+.close-btn:after {
   transform: rotate(45deg);
 }
 
@@ -962,7 +960,7 @@ button {
 }
 .product-cart__specific-item {
   margin-bottom: 6px;
-  vertical-align: text-top;
+  display: flex;
 }
 .product-cart__specific-value_pink {
   color: #f16d7f;

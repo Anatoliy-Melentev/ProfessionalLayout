@@ -22,7 +22,7 @@ button
 	font-family: Lato
 	src: url(../fonts/Lato-Regular.ttf)
 
-.cls-btn
+.close-btn
 	float: right
 	margin: 16px
 	position: relative
@@ -34,7 +34,7 @@ button
 		position: absolute
 		@include size(17,2)
 		background-color: #6F6E6E
-		@include offset(5,0,0,-2)
+		@include offset(5,false,false,-2)
 
 	&:before
 		transform: rotate(-45deg)
