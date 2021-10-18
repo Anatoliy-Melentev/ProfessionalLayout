@@ -1,0 +1,93 @@
+.form
+	&__input
+		border: 1px solid #A4A4A4
+		background-color: white
+		width: 100%
+		height: 44px
+		margin-bottom: 20px
+		padding: 12px 17px
+		box-sizing: border-box
+		transition-property: opacity
+		transition-duration: .3s
+		opacity: 1
+		&:focus
+			border: solid 1px $pink
+			outline: none
+		&:focus
+			&::placeholder
+				color: $pink
+
+		&:hover
+			opacity: 0.6
+			transition-property: opacity
+			transition-duration: .3s
+
+	&__radio-label
+		vertical-align: middle
+		line-height: 20px
+		@include size(auto,20)
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+		margin-right: 20px
+		cursor: pointer
+
+		&::before
+			content: ''
+			display: inline-block
+			@include size(15,15)
+			border: solid 2px white
+			box-shadow: 0 0 0 1px #A4A4A4
+			margin-right: 10px
+			border-radius: 50% 50%
+
+		&:hover
+			color: $pink
+
+		&:hover
+			&::before
+				color: $pink
+				box-shadow: 0 0 0 1px $pink
+
+	&__radio
+		&:checked +
+			.form__radio-label
+				&:before
+					background: $black
+					background-size: 10px 10px
+
+	&__email,
+	&__submit
+		border: none
+		margin: 0
+		height: 50px
+		display: block
+
+	&__email
+		width: 256px
+		padding: 7px 22px
+		box-sizing: border-box
+		border-top-left-radius: 25px
+		border-bottom-left-radius: 25px
+		outline: none
+		background-color: #E1E1E1
+		@include font(14,17)
+		color: $black
+		opacity: 0.67
+		&:focus
+			outline: none
+			opacity: 0.9
+
+	&__submit
+		width: 100px
+		background-color: #E05C6E
+		border-top-right-radius: 25px
+		border-bottom-right-radius: 25px
+		@include font(14,17)
+		text-align: center
+		color: white
+		cursor: pointer
+		&:hover
+			opacity: 0.6
+		&:active
+			opacity: 0.8

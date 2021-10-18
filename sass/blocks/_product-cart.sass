@@ -1,0 +1,41 @@
+.product-cart
+	@include size(652,306)
+	margin-bottom: 40px
+	flex-grow: 1
+	display: flex
+	align-items: center
+	box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+	&__img
+		@include size(262,full)
+
+	&__specific-chap
+		@include size(full,full)
+		padding: 22px 32px
+		position: relative
+		box-sizing: border-box
+
+	&__cls-btn
+		@include offset(22,22)
+
+	&__title
+		@include font(24,29)
+		width: 262px
+		margin-bottom: 42px
+		text-transform: uppercase
+		color: $black
+
+	&__specific-list
+		@include font(22,26)
+		color: #575757
+
+	&__specific-item
+		margin-bottom: 6px
+		vertical-align: text-top
+
+	&__specific-value
+		&_pink
+			color:$pink
+
+	&__specific-input-value
+		@include size(43,24)
