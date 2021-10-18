@@ -18,7 +18,7 @@
 	&__total
 		@include font(16,19,300)
 		text-align: right
-		margin-bottom: 42px
+		margin-bottom: 21px
 
 	&__total-name
 		margin-right: 34px
@@ -28,11 +28,10 @@
 
 	&__submit
 		@include size(273,50)
-		position: relative
-		&::before
-			content: ''
-			display: inline-block
-			@include size(full,1)
-			background: #E2E2E2
-			@include offset(-21,0,false,0)
+
+	&__line
+		display: inline-block
+		@include size(273,1)
+		background: #E2E2E2
+		margin-bottom: 21px
 

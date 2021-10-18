@@ -1012,7 +1012,7 @@ button {
   font-weight: 300;
   font-style: normal;
   text-align: right;
-  margin-bottom: 42px;
+  margin-bottom: 21px;
 }
 .checkout__total-name {
   margin-right: 34px;
@@ -1023,19 +1023,13 @@ button {
 .checkout__submit {
   width: 273px;
   height: 50px;
-  position: relative;
 }
-.checkout__submit::before {
-  content: "";
+.checkout__line {
   display: inline-block;
-  width: 100%;
+  width: 273px;
   height: 1px;
   background: #E2E2E2;
-  position: absolute;
-  margin: auto;
-  top: -21px;
-  right: 0px;
-  left: 0px;
+  margin-bottom: 21px;
 }
 
 /*# sourceMappingURL=style.css.map */
