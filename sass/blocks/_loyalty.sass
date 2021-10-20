@@ -1,0 +1,24 @@
+.loyalty
+	@include font(24,29,300)
+	color: #000000
+
+	&__title
+		text-transform: uppercase
+		margin-bottom: 22px
+
+	&__text
+		margin-bottom: 22px
+
+	&__item
+		margin-bottom: 16px
+
+		&::before
+			background-image: url("../img/icons/check.svg")
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center center
+			content: ''
+			margin-top: 2px
+			margin-right: 23px
+			@include size(20,20)
+			display: inline-block

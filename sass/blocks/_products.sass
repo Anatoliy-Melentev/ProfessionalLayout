@@ -1,0 +1,52 @@
+.products
+	margin-top: 96px
+	text-align: center
+
+	&__title
+		@include font(30,36)
+		color: $black
+		text-align: center
+
+	&__text
+		@include font(14,17)
+		text-align: center
+		color: $gray
+		margin-top: 6px
+
+	&__list
+		@include flex-space()
+		flex-wrap: wrap
+		margin-top: 48px
+
+	&__item
+		@include size(360,581)
+		margin-bottom: 30px
+		background: #F8F8F8
+		text-align: left
+		position: relative
+		&:hover > .products__link:before
+			opacity: 1
+			transition-duration: 1s
+
+		&:active > .products__link:before
+			background: white
+			opacity: 0.6
+
+	&__link
+		text-decoration: none
+
+		&:before
+			content: ''
+			@include size(full,420)
+			min-height: 420px
+			background: rgba(58, 56, 56, 0.86)
+			background-image: url("../img/icons/add-to-cart.svg")
+			background-size: 140px 44px
+			background-repeat: no-repeat
+			background-position: center
+			@include offset(0)
+			margin: auto
+			opacity: 0
+			transition-duration: 1s
+
+

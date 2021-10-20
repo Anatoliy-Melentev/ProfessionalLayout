@@ -1,0 +1,25 @@
+.information
+	background-color: $black
+
+	&__list
+		height: 341px
+		@include flex-space()
+		align-items: center
+
+	&__item
+		@include flex-space(center,column)
+		text-align: center
+
+	&__item-pic
+		@include size(auto,40)
+		margin: 20px auto
+
+	&__item-title
+		@include font(20,24)
+		color: #FBFBFB
+
+	&__item-text
+		@include font(14,17,300)
+		margin-top: 16px
+		text-align: center
+		color: #FBFBFB
