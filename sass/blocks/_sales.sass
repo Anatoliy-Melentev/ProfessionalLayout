@@ -1,15 +1,50 @@
 .sales
 	margin-top: 65px
 
+	&__wrp
+		@include wrapper(40%)
+		@include mobile
+			@include size(full,auto)
+			padding-top: 0
+
+	@include tablet
+		margin-top: 20px
+
+	@include mobile
+		margin-top: 65px
+
 	&__list
 		@include flex-space()
 		flex-wrap: wrap
+		@include offset(0,0,0,0)
+
+		@include mobile
+			position: static
 
 	&__item
-		@include size(360,260)
-		margin-bottom: 30px
+		flex: 1
+		height: 60%
 		box-sizing: border-box
 		position: relative
+
+		&:nth-child(2)
+			margin: 0 30px 30px
+
+			@include tablet
+				margin: 0 20px 20px
+
+			@include mobile
+				margin: 0 0 32px
+
+		&:last-child
+			margin: 0
+
+		@include mobile
+			flex: none
+			@include wrapper(72%)
+			margin-bottom: 32px
+			@include size(full,auto)
+
 		&_woman
 			background-image: url("../img/sales-woman.jpg")
 		&_man
@@ -19,16 +54,17 @@
 		&_accesories
 			background-image: url("../img/sales-accesories.jpg")
 		&_lower
+			flex: none
 			width: 100%
-			height: 180px
+			height: 40%
+			@include mobile
+				@include wrapper(32%)
 
 	&__link
 		@include size(full,full)
 		margin: 0px
 		@include flex-center(column)
-		background-repeat: no-repeat
-		background-position: center
-		background-size: contain
+		@include background()
 		text-decoration: none
 
 		&::before,
@@ -68,10 +104,15 @@
 				background-color: white
 				opacity: 0
 
+		@include mobile
+			@include offset(0,0,0,0)
+
 	&__text
 		@include font(16,19)
 		text-transform: uppercase
 		color: white
+		@include tablet
+
 
 	&__item-title
 		@include font(24,29,700)

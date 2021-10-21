@@ -41,4 +41,31 @@
 	@else
 		height: $height+$unit
 
+@mixin wrapper($ratio: 50%)
+	position: relative
+	height: 0
+	border: none
+	padding-top: $ratio
 
+@mixin background($url: false,$size: cover,$pos: center,$color: transparent,$repeat: no-repeat)
+	@if $size == full
+		background-size: 100% 100%
+	@else
+		background-size: $size
+	background-color: $color
+	@if $url != false
+		background-image: url($url)
+	background-position: $pos
+	background-repeat: $repeat
+
+@mixin tablet
+	@media (max-width: $tablet-width)
+		@content
+
+@mixin mobile
+	@media (max-width: $mobile-width)
+		@content
+
+@mixin mini
+	@media (max-width: $mini-width)
+		@content

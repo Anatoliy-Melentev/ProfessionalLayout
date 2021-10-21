@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Shop</title>
 </head>
@@ -91,39 +91,43 @@
 	</header>
 	<main>
 		<section class="brand">
-			<img class="brand__img" src="img/main-man.png" alt="">
-			<div class="brand__wrp">
-				<h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
+			<div class="brand__wrapper">
+				<img class="brand__img" src="img/main-man.png" alt="">
+				<div class="brand__wrp">
+					<h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
+				</div>
 			</div>
 		</section>
 		<section class="sales container">
 			<h2 class="sales__heading visually-hidden">Sales</h2>
-			<ul class="sales__list">
-				<li class="sales__item">
-					<a href="#" class="sales__link sales__item_woman">
-						<p class="sales__text">30% off</p>
-						<h3 class="sales__item-title">for women</h3>
-					</a>
-				</li>
-				<li class="sales__item">
-					<a href="#" class="sales__link sales__item_man">
-						<p class="sales__text">hot deal</p>
-						<h3 class="sales__item-title">for men</h3>
-					</a>
-				</li>
-				<li class="sales__item">
-					<a href="#" class="sales__link sales__item_kids">
-						<p class="sales__text">new arrivals</p>
-						<h3 class="sales__item-title">for kids</h3>
-					</a>
-				</li>
-				<li class="sales__item sales__item_lower">
-					<a href="#" class="sales__link sales__item_accesories">
-						<p class="sales__text">luxirous & trendy</p>
-						<h3 class="sales__item-title">accesories</h3>
-					</a>
-				</li>
-			</ul>
+			<div class="sales__wrp">
+				<ul class="sales__list">
+					<li class="sales__item">
+						<a href="#" class="sales__link sales__item_woman">
+							<p class="sales__text">30% off</p>
+							<h3 class="sales__item-title">for women</h3>
+						</a>
+					</li>
+					<li class="sales__item">
+						<a href="#" class="sales__link sales__item_man">
+							<p class="sales__text">hot deal</p>
+							<h3 class="sales__item-title">for men</h3>
+						</a>
+					</li>
+					<li class="sales__item">
+						<a href="#" class="sales__link sales__item_kids">
+							<p class="sales__text">new arrivals</p>
+							<h3 class="sales__item-title">for kids</h3>
+						</a>
+					</li>
+					<li class="sales__item sales__item_lower">
+						<a href="#" class="sales__link sales__item_accesories">
+							<p class="sales__text">luxirous & trendy</p>
+							<h3 class="sales__item-title">accesories</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<section class="products container">
 			<h2 class="products__title">Fetured Items</h2>
@@ -233,8 +237,8 @@
 					<span class="writeus__desc">for our newletter and promotion</span>
 					<form class="writeus__form form" action="">
 						<label class="visually-hidden" for="subscrime-form"></label>
-						<input id="subscrime-form" class="form__email" type="email" placeholder="Enter Your Email">
-						<input class="form__submit" type="submit" value="Subscribe">
+						<input id="subscrime-form" class="writeus__input form__email" type="email" placeholder="Enter Your Email">
+						<input class="form__submit writeus__submit" type="submit" value="Subscribe">
 					</form>
 				</div>
 			</div>

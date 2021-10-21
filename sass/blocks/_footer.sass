@@ -1,9 +1,7 @@
 .footer
-
+	flex: 0 0 auto
 	&__feedback
-		background-image: url("../img/footer-back.jpg")
-		background-size: cover
-		background-position: center
+		@include background("../img/footer-back.jpg")
 
 	&__end-info
 		background-color: $black

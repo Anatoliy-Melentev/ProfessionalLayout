@@ -2,6 +2,12 @@
 	@include font(24,29,300)
 	color: #000000
 
+	@include tablet
+		@include font(16,19)
+
+	@include mobile
+		margin-top: 40px
+
 	&__title
 		text-transform: uppercase
 		margin-bottom: 22px
@@ -13,12 +19,10 @@
 		margin-bottom: 16px
 
 		&::before
-			background-image: url("../img/icons/check.svg")
-			background-repeat: no-repeat
-			background-size: contain
-			background-position: center center
+			@include background("../img/icons/check.svg")
 			content: ''
 			margin-top: 2px
 			margin-right: 23px
 			@include size(20,20)
-			display: inline-block
+			display: block
+			float: left

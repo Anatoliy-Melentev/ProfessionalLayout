@@ -18,6 +18,9 @@
 		flex-wrap: wrap
 		margin-top: 48px
 
+		@include tablet
+			@include flex-space(evenly)
+
 	&__item
 		@include size(360,581)
 		margin-bottom: 30px
@@ -32,6 +35,9 @@
 			background: white
 			opacity: 0.6
 
+		@include mini
+			@include size(full,auto)
+
 	&__link
 		text-decoration: none
 
@@ -39,14 +45,11 @@
 			content: ''
 			@include size(full,420)
 			min-height: 420px
-			background: rgba(58, 56, 56, 0.86)
-			background-image: url("../img/icons/add-to-cart.svg")
-			background-size: 140px 44px
-			background-repeat: no-repeat
-			background-position: center
+			@include background("../img/icons/add-to-cart.svg",140px 44px,$color: rgba(58, 56, 56, 0.86))
 			@include offset(0)
 			margin: auto
 			opacity: 0
 			transition-duration: 1s
+
 
 

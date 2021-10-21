@@ -5,6 +5,9 @@
 	border: none
 	text-transform: uppercase
 	padding: 14px 38px
+	@include mobile
+		@include font(12,14)
+		padding: 8px 22px
 
 	&:hover
 		transform: scale(1.01,1.01)
@@ -20,6 +23,9 @@
 		color: #F26376
 		transition-property: background-color, color
 		transition-duration: .5s
+		@include mobile
+			@include font(12,14)
+			padding: 8px 22px
 
 		&:hover
 			background-color: $pink
