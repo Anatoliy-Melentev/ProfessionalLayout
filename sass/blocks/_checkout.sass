@@ -6,6 +6,12 @@
 	text-transform: uppercase
 	text-align: center
 
+	@include tablet
+		margin-top: 38px
+
+	@include mobile
+		width: 100%
+
 	&__subtotal-list
 		@include font(11,13)
 		color: #4A4A4A
@@ -28,10 +34,14 @@
 
 	&__submit
 		@include size(273,50)
+		@include mobile
+			width: 100%
 
 	&__line
 		display: inline-block
 		@include size(273,1)
 		background: #E2E2E2
 		margin-bottom: 21px
+		@include mobile
+			width: 100%
 

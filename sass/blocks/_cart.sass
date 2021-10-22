@@ -3,3 +3,15 @@
 	&__wrp
 		@include flex-space()
 
+		@include tablet
+			flex-direction: column
+
+	@include tablet
+		padding-top: 56px
+
+	&__chapter-form
+		@include tablet
+			@include flex-space()
+
+		@include mobile
+			flex-direction: column

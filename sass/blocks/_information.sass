@@ -5,10 +5,22 @@
 		height: 341px
 		@include flex-space()
 		align-items: center
+		box-sizing: border-box
+
+		@include tablet
+			flex-direction: column
+			margin: 0 auto
+			padding: 24px
+			@include size(360, auto)
+		@include mobile
+			width: 100%
 
 	&__item
-		@include flex-space(center,column)
+		@include flex-space(evenly,column)
 		text-align: center
+		box-sizing: border-box
+		@include tablet
+			margin: 24px 0
 
 	&__item-pic
 		@include size(auto,40)
@@ -23,3 +35,5 @@
 		margin-top: 16px
 		text-align: center
 		color: #FBFBFB
+		@include mini
+			@include size(full,auto)

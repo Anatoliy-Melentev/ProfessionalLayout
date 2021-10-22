@@ -98,7 +98,7 @@
 	</section>
 	<section class="content-form">
 		<div class="content-form__wrp container">
-			<div class="content-form__registration">
+			<div class="content-form__registration content-form__item">
 				<h2 class="content-form__title visually-hidden">Registration form</h2>
 				<form class="content-form__registration-form registration-form form" action="#">
 
@@ -114,6 +114,8 @@
 						<label for="male" class="registration-form__sex-label form__radio-label">Male</label>
 						<input type="radio" id="female" name="sex" class="registration-form__sex form__radio visually-hidden">
 						<label for="female" class="registration-form__sex-label form__radio-label">Female</label>
+						<input type="radio" id="other" name="sex" class="registration-form__sex form__radio visually-hidden">
+						<label for="other" class="registration-form__sex-label form__radio-label">Other</label>
 					</div>
 
 					<h2 class="registration-form__title-name">Login details</h2>
@@ -132,7 +134,7 @@
 					</button>
 				</form>
 			</div>
-			<div class="content-form__loyalty loyalty">
+			<div class="content-form__loyalty content-form__item loyalty">
 				<h2 class="loyalty__title">loyalty has its perks</h2>
 				<p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
 				<ul class="loyalty__list">
@@ -158,8 +160,8 @@
 				<h3 class="writeus__title">subscribe</h3>
 				<span class="writeus__desc">for our newletter and promotion</span>
 				<form class="writeus__form form" action="">
-					<input class="form__email" type="email" placeholder="Enter Your Email">
-					<input class="form__submit" type="submit" value="Subscribe">
+					<input class="form__email writeus__input" type="email" placeholder="Enter Your Email">
+					<input class="form__submit writeus__submit" type="submit" value="Subscribe">
 				</form>
 			</div>
 		</div>
