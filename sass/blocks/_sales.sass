@@ -1,17 +1,15 @@
 .sales
 	margin-top: 65px
+	@include tablet
+		margin-top: 20px
+	@include mobile
+		margin-top: 65px
 
 	&__wrp
 		@include wrapper(40%)
 		@include mobile
 			@include size(full,auto)
 			padding-top: 0
-
-	@include tablet
-		margin-top: 20px
-
-	@include mobile
-		margin-top: 65px
 
 	&__list
 		@include flex-space()
@@ -43,7 +41,7 @@
 			flex: none
 			@include wrapper(72%)
 			margin-bottom: 32px
-			@include size(full,auto)
+			@include size(full)
 
 		&_woman
 			background-image: url("../img/sales-woman.jpg")
@@ -79,13 +77,13 @@
 
 		&::before
 			@include offset(0,false,false,0)
-			border-top: solid 5px $pink
-			border-left: solid 5px $pink
+			border-top: solid 5px $pink-border-button
+			border-left: solid 5px $pink-border-button
 
 		&::after
 			@include offset(false,0,0,false)
-			border-right: solid 5px $pink
-			border-bottom: solid 5px $pink
+			border-right: solid 5px $pink-border-button
+			border-bottom: solid 5px $pink-border-button
 
 		&:hover
 			&::before,
@@ -116,5 +114,5 @@
 
 	&__item-title
 		@include font(24,29,700)
-		color: $pink
+		color: $pink-text
 		text-transform: uppercase

@@ -11,11 +11,11 @@
 		transition-duration: .3s
 		opacity: 1
 		&:focus
-			border: solid 1px $pink
+			border: solid 1px $pink-border-button
 			outline: none
 		&:focus
 			&::placeholder
-				color: $pink
+				color: $pink-text
 
 		&:hover
 			opacity: 0.6
@@ -42,18 +42,18 @@
 			border-radius: 50% 50%
 
 		&:hover
-			color: $pink
+			color: $pink-text
 
 		&:hover
 			&::before
-				color: $pink
-				box-shadow: 0 0 0 1px $pink
+				color: $pink-text
+				box-shadow: 0 0 0 1px $pink-border-button
 
 	&__radio
 		&:checked +
 			.form__radio-label
 				&:before
-					background: $black
+					background: $black-back
 					background-size: 10px 10px
 
 	&__email,
@@ -72,7 +72,7 @@
 		outline: none
 		background-color: #E1E1E1
 		@include font(14,17)
-		color: $black
+		color: $black-text
 		opacity: 0.67
 		&:focus
 			outline: none
@@ -91,3 +91,92 @@
 			opacity: 0.6
 		&:active
 			opacity: 0.8
+			
+input[type=range]
+	height: 47px
+	-webkit-appearance: none
+	margin: 10px 0
+	width: 150px
+
+input[type=range]:focus
+	outline: none
+
+input[type=range]::-webkit-slider-runnable-track
+	width: 150px
+	height: 1px
+	cursor: pointer
+	animate: 0.2s
+	box-shadow: 0px 0px 0px #000000
+	background: #B6B6B6
+	border-radius: 0px
+	border: 0px solid #8A8A8A
+
+input[type=range]::-webkit-slider-thumb
+	box-shadow: 0px 0px 0px #828282
+	border: 1px solid #EF5B70
+	height: 40px
+	width: 4px
+	border-radius: 0px
+	background: #EF5B70
+	cursor: pointer
+	-webkit-appearance: none
+	margin-top: -20px
+
+input[type=range]:focus::-webkit-slider-runnable-track
+	background: #B6B6B6
+
+input[type=range]::-moz-range-track
+	width: 150px
+	height: 1px
+	cursor: pointer
+	animate: 0.2s
+	box-shadow: 0px 0px 0px #000000
+	background: #B6B6B6
+	border-radius: 0px
+	border: 0px solid #8A8A8A
+
+input[type=range]::-moz-range-thumb
+	box-shadow: 0px 0px 0px #828282
+	border: 1px solid #EF5B70
+	height: 40px
+	width: 4px
+	border-radius: 0px
+	background: #EF5B70
+	cursor: pointer
+
+input[type=range]::-ms-track
+	width: 150px
+	height: 1px
+	cursor: pointer
+	animate: 0.2s
+	background: transparent
+	border-color: transparent
+	color: transparent
+
+input[type=range]::-ms-fill-lower
+	background: #B6B6B6
+	border: 0px solid #8A8A8A
+	border-radius: 0px
+	box-shadow: 0px 0px 0px #000000
+
+input[type=range]::-ms-fill-upper
+	background: #B6B6B6
+	border: 0px solid #8A8A8A
+	border-radius: 0px
+	box-shadow: 0px 0px 0px #000000
+
+input[type=range]::-ms-thumb
+	margin-top: 1px
+	box-shadow: 0px 0px 0px #828282
+	border: 1px solid #EF5B70
+	height: 40px
+	width: 4px
+	border-radius: 0px
+	background: #EF5B70
+	cursor: pointer
+
+input[type=range]:focus::-ms-fill-lower
+	background: #B6B6B6
+
+input[type=range]:focus::-ms-fill-upper
+	background: #B6B6B6

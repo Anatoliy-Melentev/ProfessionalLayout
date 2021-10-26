@@ -1,10 +1,12 @@
 .button-main
-	background-color: #F16D7F
+	background-color: $pink-button
 	@include font(14,17)
-	color: #FFFFFF
+	color: white
 	border: none
 	text-transform: uppercase
 	padding: 14px 38px
+	position: relative
+	z-index: 1
 	@include mobile
 		@include font(12,14)
 		padding: 8px 22px
@@ -20,7 +22,7 @@
 		background-color: transparent
 		border: 1px solid #FF6A6A
 		@include font(16,19)
-		color: #F26376
+		color: $pink-border-button
 		transition-property: background-color, color
 		transition-duration: .5s
 		@include mobile
@@ -28,7 +30,7 @@
 			padding: 8px 22px
 
 		&:hover
-			background-color: $pink
+			background-color: $pink-button
 			color: white
 			transition-property: background-color, color
 			transition-duration: .5s
