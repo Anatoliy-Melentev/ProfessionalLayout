@@ -60,9 +60,7 @@
 
 @mixin add-fonts($name)
 	$weights: ("Thin": 100, "Light": 300, "Regular": 400, "Bold": 700, "Black": 900)
-	$formats: ("woff2": "woff2", "woff": "woff", "ttf": "truetype")
 	$styles: (normal, italic)
-	$urls: ()
 	$path: "../fonts/"
 	@each $weightname,$weight in $weights
 		@each $style in $styles
@@ -73,6 +71,7 @@
 					$weightname: $weightname+"Italic"
 
 			$url: $path+$name+"-"+$weightname+"."
+
 			@font-face
 				font-family: $name
 				font-style: $style
