@@ -4,13 +4,13 @@
 
 	&__title
 		@include font(30,36)
-		color: $black
+		color: $black-text
 		text-align: center
 
 	&__text
 		@include font(14,17)
 		text-align: center
-		color: $gray
+		color: #9f9f9f
 		margin-top: 6px
 
 	&__list
@@ -50,6 +50,11 @@
 			margin: auto
 			opacity: 0
 			transition-duration: 1s
+
+	&__product
+		margin-bottom: 128px
+		@include mobile
+			margin-bottom: 64px
 
 
 

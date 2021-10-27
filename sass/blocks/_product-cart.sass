@@ -10,6 +10,7 @@
 	&__wrp
 		@include size(full,full)
 		display: flex
+		text-decoration: none
 		@include tablet
 			@include offset(0,0,0,0)
 
@@ -36,7 +37,7 @@
 		width: 262px
 		margin-bottom: 42px
 		text-transform: uppercase
-		color: $black
+		color: $black-text
 
 		@include mobile
 			@include font(16,19)
@@ -63,7 +64,7 @@
 
 	&__specific-value
 		&_pink
-			color: $pink
+			color: $pink-text
 
 	&__specific-input-value
 		@include size(43,24)
