@@ -14,19 +14,16 @@
 		margin-top: 6px
 
 	&__list
-		@include flex-space()
+		@include flex-space(evenly)
 		flex-wrap: wrap
 		margin-top: 48px
 
-		@include tablet
-			@include flex-space(evenly)
-
 	&__item
-		@include size(360,581)
-		margin-bottom: 30px
 		background: #F8F8F8
 		text-align: left
 		position: relative
+		width: 360px
+		margin-bottom: 30px
 		&:hover > .products__link:before
 			opacity: 1
 			transition-duration: 1s
@@ -34,9 +31,8 @@
 		&:active > .products__link:before
 			background: white
 			opacity: 0.6
-
 		@include mini
-			@include size(full,auto)
+			width: 100%
 
 	&__link
 		text-decoration: none
@@ -55,6 +51,15 @@
 		margin-bottom: 128px
 		@include mobile
 			margin-bottom: 64px
+
+	&__filters >
+		.products__filters-list
+			justify-content: flex-start
+			@include tablet
+				@include flex-space(between)
+
+
+
 
 
 
