@@ -35,7 +35,7 @@
 		@include mobile
 			@include font(10,12)
 		@include mini
-			margin: 0 5px
+			margin: 0 0
 
 	&__icon
 		fill: #6F6E6E
@@ -173,4 +173,24 @@
 		@include font(50,60)
 		@include size(70,70)
 		float: right
+
+	&__price-form
+		display: grid
+		grid-template-columns: 35px 1fr 40px
+		vertical-align: middle
+		padding: 10px
+
+	&__label-range
+		display: inline-block
+		line-height: 45px
+
+	&__output-price
+		display: inline-block
+		width: auto
+
+	&__range-price
+		display: block
+		float: none
+		grid-column: 1/-1
+		width: 100% !important
 

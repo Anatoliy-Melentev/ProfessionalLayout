@@ -18,10 +18,10 @@
 		color: #6F6E6E
 		transition-duration: .3s
 		&:hover
-			margin-left: 15px
+			margin-left: 10px
 			text-decoration: none
 			transition-duration: .3s
-		&:hover
+			color: $pink-text
 			&:before
 				content: ''
 				display: inline-block
@@ -29,5 +29,5 @@
 				@include offset(7,false,false,-10)
 				margin-right: 7px
 				transform: rotate(45deg)
-				border-top: solid 1px gray
-				border-right: solid 1px gray
+				border-top: solid 1px $pink-text
+				border-right: solid 1px $pink-text
